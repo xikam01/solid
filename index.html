@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/title.png">
+</head>
+<body>
+    <div class="container">
+        
+     <div class="navigation">
+        <img src="./css/menu.png" class="menu">
+        <img src="./css/logo.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <button type="button" onclick="toggleBnt()" id="btn"><span></span></button>
+     </div>
+
+     <div class="lampcontainer">
+        <img src="./css/lamp.png" class="lamp">
+        <img src="./css/light.png" class="light">
+     </div>
+     <div class="textcontainer">
+        <h2>Welcome <br>to Javascritp </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eius ullam debitis vitae, omnis dolores libero ex ipsam consequuntur rerum.</p>
+        <a href="#">Check all Collection</a>
+        <div class="contarol">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+     </div>
+
+    </div>
+
+
+
+
+    <script>
+        var btn = document.getElementById(btn);
+        function toggleBnt(){
+                btn.classList.toggle("active")
+                 }
+    </script>
+</body>
+</html>
